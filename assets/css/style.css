@@ -1,0 +1,36 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.input-box .button {
+  width: 37px;
+  height: 37px;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: 22px;
+  cursor: pointer;
+}
+
+.input-box .button:active {
+  background: #ccc;
+}
+
+.input-box input {
+  width: 60px;
+  padding: 5px 10px;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  font-size: 22px;
+  margin: 0 10px;
+}
