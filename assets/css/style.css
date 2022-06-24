@@ -57,12 +57,12 @@ body {
   justify-content: space-between;
 }
 
-.login-button {
+.budget-button {
   display: flex;
   align-items: center;
 }
 
-.login-button button {
+.budget-button button {
   font-size: 1rem;
   font-weight: bold;
   color: #fff;
@@ -74,12 +74,12 @@ body {
   cursor: pointer;
 }
 
-.login-button button:hover {
+.budget-button button:hover {
   transition: all 0.5s;
   background-color: #24de5cb9;
 }
 
-.login-button button a {
+.budget-button button a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
@@ -133,7 +133,7 @@ body {
 }
 
 .input-box label,
-.modulo-title h6 {
+.price-title h6 {
   font-size: 1rem;
   font-weight: 600;
   color: #000000c0;
@@ -143,30 +143,16 @@ body {
   color: #000000be;
 }
 
-.modulo-group{
+.price-group{
   display: flex;
   justify-content: space-between;
   margin-top: 0.62rem;
   padding: 0 0.10rem;
 }
 
-.modulo-input{
-  display: flex;
-  align-items: center;
-}
-
-.modulo-input input{
-  margin-right: 0.35rem;
-}
-
-.modulo-input label {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #000000c0;
-}
 
 /*Resultado*/
-.modulo-group p span {
+.price-group p span {
   font-size: 30px;
   font-weight: 900;
   padding: 10px;

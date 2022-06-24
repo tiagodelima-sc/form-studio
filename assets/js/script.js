@@ -17,8 +17,6 @@ function somar() {
   ) {
     alert("Por favor, preencha todo os campos!");
   } else {
-    console.log("passou");
-
     resultadoWhats = num1.value * 164.9;
     resultadoAPI = num2.value * 76.9;
     resultadoCampanha = num3.value * 109.9;
