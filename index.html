@@ -5,106 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon-16x16.png">
+
+    <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <script src="/assets/js/script.js"></script>
-
-    <title>Formulario de Preco</title>
+    <title>Orçamento - WhatsHelp</title>
   </head>
   <body>
     <div class="container">
       <div class="form-image">
-        <img src="/imgs/img-1.svg" alt="img" />
+        <img src="/imgs/banner-whatshelp.fw.png" alt="img" />
       </div>
       <div class="form">
-        <form action="#">
+        <section>
           <div class="form-header">
             <div class="title">
               <h1>Faça seu Orçamento</h1>
             </div>
             <div class="login-button">
-              <button><a href="#">Gerar Orçamento</a></button>
+              <button onclick="somar()">Gerar Orçamento</button>
             </div>
           </div>
           <div class="input-group">
             <div class="input-box">
-              <label for="numWhats">Números de WhatsApp</label>
-              <!--<div class="dec button">-</div>-->
-
+              <label for="numWhats">Números de WhatsApp <span class="important">*</span></label>
               <input
-                type="text"
-                name="qty"
-                id="1"
-                value="0"
+                type="number"
+                name="numWhats"
+                id="n1"
+                min="0"
+                max="20"
+                value="1"
                 class="input-filed"
               />
-              <!-- <div class="inc button">+</div>-->
             </div>
             <div class="input-box">
-              <label for="usersAdd">Módulo API</label>
-              <!--<div class="dec button">-</div>-->
+              <label for="numUsuarios">Números de Usuários <span class="important">*</span></label>
               <input
-                type="text"
-                name="qty"
-                id="2"
+                type="number"
+                name="numUsuarios"
+                id="n5"
+                min="0"
+                max="20"
                 value="0"
                 class="input-filed"
               />
-              <!--<div class="inc button">+</div>-->
             </div>
             <div class="input-box">
-              <label for="email">Módulo Campanha</label>
-              <!--<div class="dec button">-</div>-->
+              <label for="moduloChatBot">Módulo ChatBot <span class="important">*<span></label>
               <input
-                type="text"
-                name="qty"
-                id="3"
-                value="0"
+                type="number"
+                name="moduloChatBot"
+                id="n6"
+                min="0"
+                max="1"
+                value="1"
                 class="input-filed"
               />
-              <!-- <div class="inc button">+</div>-->
             </div>
             <div class="input-box">
-              <label for="tel">Módulo Chat Interno</label>
-              <!--<div class="dec button">-</div>-->
+              <label for="moduloAPI"
+                >Módulo de API <span class="important">*</span></label
+              >
               <input
-                type="text"
-                name="qty"
-                id="4"
+                type="number"
+                name="moduloAPI"
+                id="n2"
+                min="0"
+                max="1"
                 value="0"
                 class="input-filed"
               />
-              <!--<div class="inc button">+</div>-->
+            </div>
+            <div class="input-box">
+              <label for="moduloCamp"
+                >Módulo Campanha <span class="important">*</span></label
+              >
+              <input
+                type="number"
+                name="moduloCamp"
+                id="n3"
+                min="0"
+                max="1"
+                value="0"
+                class="input-filed"
+              />
+            </div>
+            <div class="input-box">
+              <label for="moduloChat"
+                >Módulo Chat Interno <span class="important">*</span></label
+              >
+              <input
+                type="number"
+                name="moduloChat"
+                id="n4"
+                min="0"
+                max="1"
+                value="0"
+                class="input-filed"
+              />
             </div>
           </div>
           <div class="modulo-inputs">
             <div class="modulo-title">
-              <h6>Módulo ChatBot</h6>
+              <h6>Confira o Resultado do seu Orçamento:</h6>
             </div>
             <div class="modulo-group">
-              <div class="modulo-input">
-                <input type="radio" id="5" name="modulo" />
-                <label for="female">1</label>
-              </div>
-              <div class="modulo-input">
-                <input type="radio" id="6" name="modulo" />
-                <label for="male">2</label>
-              </div>
-              <div class="modulo-input">
-                <input type="radio" id="7" name="modulo" />
-                <label for="others">3</label>
-              </div>
-              <div class="modulo-input">
-                <input type="radio" id="8" name="modulo" />
-                <label for="none">4</label>
-              </div>
+              <p><span class="resultado"></span></p>
             </div>
           </div>
           <div class="continue-button">
-            <button><a href="#">Experimente por 7 Dias Grátis</a></button>
+            <button id="buttonFree"><a href="https://api.whatsapp.com/send?phone=554736220071&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20software%20WhatsHelp">Experimente por 7 Dias Grátis</a></button>
+            <a href="https://agenciasilver.com.br/projetos/wh/" id="returnHome"><p>Voltar ao inicio</p></a>
           </div>
-        </form>
+        </section>
       </div>
     </div>
+
+    <!--JS-->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
