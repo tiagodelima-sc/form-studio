@@ -1,10 +1,11 @@
-var num1 = document.querySelector("#n1");
-var num2 = document.querySelector("#n2");
-var num3 = document.querySelector("#n3");
-var num4 = document.querySelector("#n4");
-var num5 = document.querySelector("#n5");
-var num6 = document.querySelector("#n6");
-var resultado = document.querySelector(".resultado");
+let num1 = document.querySelector("#n1");
+let num2 = document.querySelector("#n2");
+let num3 = document.querySelector("#n3");
+let num4 = document.querySelector("#n4");
+let num5 = document.querySelector("#n5");
+let num6 = document.querySelector("#n6");
+let resultado = document.querySelector(".resultado");
+let taxa = document.querySelector(".taxa");
 
 function somar() {
   if (
@@ -33,6 +34,7 @@ function somar() {
       parseFloat(resultadoChatBot);
 
     resultado.innerHTML = "R$ " + resultadoTotal.toFixed(2) + " / mês";
+    taxa.innerHTML = "* Taxa de Setup: R$ 297,00 (Taxa Única)";
     document.getElementById("buttonFree").style.display = "block";
     document.getElementById("returnHome").style.display = "block";
   }

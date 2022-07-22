@@ -32,7 +32,7 @@
           </div>
           <div class="input-group">
             <div class="input-box">
-              <label for="n1">Números de WhatsApp <span class="important">*</span></label>
+              <label for="n1">Números de WhatsApp <span data-tooltip="Valor Unitário: R$164,90 + Incluso 1 usuário administrador" class="important"><i class="fas fa-info-circle"></i></span></label>
               <input
                 type="number"
                 id="n1"
@@ -43,7 +43,7 @@
               />
             </div>
             <div class="input-box">
-              <label for="n5">Números de Usuários <span class="important">*</span></label>
+              <label for="n5">Números de Usuários <span data-tooltip="Valor Unitário: R$54,90 por usuário adicional" class="important"><i class="fas fa-info-circle"></i></i></i></span></label>
               <input
                 type="number"
                 id="n5"
@@ -54,7 +54,7 @@
               />
             </div>
             <div class="input-box">
-              <label for="n6">Módulo ChatBot <span class="important">*<span></label>
+              <label for="n6">Módulo ChatBot <span data-tooltip="Valor Unitário: R$76,90" class="important"><i class="fas fa-info-circle"></i></i></i><span></label>
               <input
                 type="number"
                 id="n6"
@@ -66,7 +66,7 @@
             </div>
             <div class="input-box">
               <label for="n2"
-                >Módulo de API <span class="important">*</span></label
+                >Módulo de API <span data-tooltip="Valor Unitário: R$76,90" class="important"><i class="fas fa-info-circle"></i></i></i></span></label
               >
               <input
                 type="number"
@@ -79,7 +79,7 @@
             </div>
             <div class="input-box">
               <label for="n3"
-                >Módulo Campanha <span class="important">*</span></label
+                >Módulo Campanha <span data-tooltip="Valor Unitário: R$109,90" class="important"><i class="fas fa-info-circle"></i></span></label
               >
               <input
                 type="number"
@@ -92,7 +92,7 @@
             </div>
             <div class="input-box">
               <label for="n4"
-                >Módulo Chat Interno <span class="important">*</span></label
+                >Módulo Chat Interno <span data-tooltip="Valor Unitário: R$43,90" class="important"><i class="fas fa-info-circle"></i></span></label
               >
               <input
                 type="number"
@@ -111,6 +111,9 @@
             <div class="price-group">
               <p><span class="resultado"></span></p>
             </div>
+            <div class="taxa-group">
+              <p><span class="taxa"></span></p>
+            </div>
           </div>
           <div class="continue-button">
             <button id="buttonFree"><a href="https://api.whatsapp.com/send?phone=554736220071&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20software%20WhatsHelp">Experimente por 7 Dias Grátis</a></button>
@@ -120,6 +123,8 @@
       </div>
     </div>
 
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/d618993ea1.js" crossorigin="anonymous"></script>
     <!--JS-->
     <script src="assets/js/script.js"></script>
   </body>
